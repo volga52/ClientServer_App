@@ -34,9 +34,12 @@ def main():
     :return:
     '''
 
+    sys_arg = sys.argv
+
     try:
-        if '-p' in sys.argv:
-            listen_port = int(sys.argv[sys.argv.index('-p') + 1])
+        # if '-p' in sys_arg:
+        if '-p' in sys_arg:
+            listen_port = int(sys_arg[sys_arg.index('-p') + 1])
         else:
             listen_port = DEFAULT_PORT
         if listen_port < 1024 or listen_port > 65535:
@@ -52,8 +55,8 @@ def main():
     # Затем загружаем какой адрес слушать
 
     try:
-        if '-a' in sys.argv:
-            listen_address = sys.argv[sys.argv.index('-a') + 1]
+        if '-a' in sys_arg:
+            listen_address = sys_arg[sys_arg.index('-a') + 1]
         else:
             listen_address = ''
 
@@ -74,10 +77,10 @@ def main():
     while True:
         client, client_address = transport.accept()
         try:
-            message_from_cient = get_message(client)
-            print(message_from_cient)
+            message_from_client = get_message(client)
+            print(message_from_client)
             # {'action': 'presence', 'time': 1573760672.167031, 'user': {'account_name': 'Guest'}}
-            response = process_client_message(message_from_cient)
+            response = process_client_message(message_from_client)
             send_message(client, response)
             client.close()
         except (ValueError, json.JSONDecodeError):
