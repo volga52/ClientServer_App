@@ -1,0 +1,94 @@
+2021-08-10 14:42:28,000 INFO client.py Ответ получен 200 : OK сервер 192.168.3.8
+2021-08-10 14:46:16,411     INFO       client.py               Ответ получен '200 : OK' сервер 192.168.3.8
+2021-08-10 14:47:47,896     INFO       client.py               Ответ получен '200 : OK' сервер 192.168.3.8
+2021-08-10 14:52:22,345     INFO       client.py               Ответ получен '200 : OK' сервер 192.168.3.8
+2021-08-10 14:52:39,850     INFO       client.py               Ответ получен '200 : OK' сервер 192.168.3.8
+2021-08-10 15:07:20,052     INFO       client.py               Ответ получен '200 : OK' сервер 192.168.3.8
+2021-08-10 15:07:55,605     INFO       client.py               Ответ получен '200 : OK' сервер 192.168.3.8
+2021-08-10 15:09:20,636     INFO       client.py               Ответ получен '200 : OK' сервер 192.168.3.8
+2021-08-10 15:10:03,306     INFO       client.py               Ответ получен '200 : OK' сервер 192.168.3.8
+2021-08-10 15:13:33,218     INFO       client.py               Ответ получен '200 : OK' сервер 192.168.3.8
+2021-08-10 15:14:25,678     INFO       client.py               Ответ получен '200 : OK' сервер 192.168.3.8
+2021-08-10 15:23:11,680     INFO       client.py               Ответ получен '200 : OK' сервер 192.168.3.8
+2021-08-10 15:27:13,537     INFO       client.py               Ответ получен '200 : OK' сервер 192.168.3.8
+2021-08-10 15:27:51,167     INFO       client.py               Ответ получен '200 : OK' сервер 192.168.3.8
+2021-08-10 15:35:44,869     INFO       client.py               Ответ получен '200 : OK' сервер 192.168.3.8
+2021-08-10 15:37:31,629     INFO       client.py               Ответ получен '200 : OK' сервер 192.168.3.8
+2021-08-10 15:45:30,735     INFO       client.py               Ответ получен '200 : OK' сервер 192.168.3.8
+2021-08-10 15:50:12,405     INFO       client.py               Сервер 192.168.3.8 ответ'200 : OK' 
+2021-08-10 19:31:45,525     INFO       client.py               Сервер 192.168.3.8 ответ'200 : OK' 
+2021-08-10 20:28:50,329     INFO       client.py               Сервер 192.168.3.8 ответ'200 : OK' 
+2021-08-10 20:30:02,867     ERROR      client.py               Error
+2021-08-10 20:32:17,165     ERROR      client.py               Error
+2021-08-10 20:34:05,593     INFO       client.py               Сервер 192.168.3.8 ответ'200 : OK' 
+2021-08-10 20:36:33,627     INFO       client.py               Сервер 192.168.3.8 ответ'200 : OK' 
+2021-08-10 20:37:56,718     ERROR      client.py               Error
+2021-08-10 20:41:45,624     ERROR      client.py               Error
+2021-08-10 20:42:24,895     INFO       client.py               Сервер 192.168.3.8 ответ'200 : OK' 
+2021-08-10 20:43:47,178     ERROR      client.py               Error
+2021-08-10 20:44:02,851     ERROR      client.py               Error
+2021-08-10 20:46:46,676     ERROR      client.py               Error
+2021-08-10 20:51:59,490     ERROR      client.py               Error
+2021-08-10 20:55:28,286     ERROR      client.py               Error
+2021-08-10 20:56:15,738     ERROR      client.py               Error
+2021-08-10 21:01:33,666     ERROR      client.py               Error
+2021-08-10 21:15:15,145     INFO       client.py               Сервер 192.168.3.8 ответ'200 : OK' 
+2021-08-10 21:16:03,471     INFO       client.py               Сервер 192.168.3.8 ответ'200 : OK' 
+2021-08-10 21:16:11,180     INFO       client.py               Сервер 192.168.3.8 ответ'200 : OK' 
+2021-08-10 21:16:36,583     INFO       client.py               Сервер 192.168.3.8 ответ'200 : OK' 
+2021-08-10 21:24:43,851     ERROR      client.py               Error
+2021-08-10 21:26:04,091     ERROR      client.py               Error
+2021-08-10 21:26:25,531     INFO       client.py               Сервер 192.168.3.8 ответ'200 : OK' 
+2021-08-10 21:27:52,010     ERROR      client.py               Error
+2021-08-10 21:28:15,208     ERROR      client.py               Error
+2021-08-10 21:29:37,023     INFO       client.py               Сервер 192.168.3.8 ответ'200 : OK' 
+2021-08-10 21:30:24,900     ERROR      client.py               Error
+2021-08-10 21:30:48,309     INFO       client.py               Сервер 192.168.3.8 ответ'200 : OK' 
+2021-08-10 21:31:54,819     INFO       client.py               Сервер 192.168.3.8 ответ'200 : OK' 
+2021-08-10 21:32:47,372     INFO       client.py               Сервер 192.168.3.8 ответ'200 : OK' 
+2021-08-10 21:34:56,187     ERROR      client.py               Error
+2021-08-10 21:35:09,951     ERROR      client.py               Error
+2021-08-10 21:39:03,349     INFO       client.py               Сервер 192.168.3.8 ответ'200 : OK' 
+2021-08-11 18:09:38,621     INFO       client.py               Сервер 192.168.3.8 ответ'200 : OK' 
+2021-08-12 11:21:21,164     INFO       client.py               Сервер 192.168.3.8 ответ'200 : OK' 
+-----------------------
+2021-08-12 12:05:10,013     INFO       client.py               Сервер 192.168.3.8 ответ'200 : OK' 
+2021-08-12 12:07:18,443     INFO       client.py               Сервер 192.168.3.8 ответ'200 : OK' 
+2021-08-12 12:08:19,860     INFO       client.py               Сервер 192.168.3.8 ответ'200 : OK' 
+2021-08-12 12:28:38,815     INFO       client.py               Сервер 192.168.3.8 ответ'200 : OK' 
+2021-08-12 12:34:24,028     INFO       client.py               Сервер 192.168.3.8 ответ'200 : OK' 
+2021-08-12 12:55:20,611     ERROR      client.py               Error
+2021-08-12 13:03:28,565     ERROR      client.py               Не удалось декодировать сообщение сервера.
+2021-08-12 13:06:26,475     INFO       client.py               Сервер 192.168.3.8 ответ'200 : OK' 
+-----------------------
+2021-08-12 13:12:55,670     INFO       client.py               Сервер 192.168.3.8 ответ'200 : OK' 
+2021-08-12 13:14:38,305     DEBUG      decos.py                Была вызвана функция create_presence c параметрами (<__main__.Client object at 0x00000000016BCC10>,), {}. Вызов из модуля __main__. Вызов из функции Client(sys.argv).connect().Вызов из функции connect
+2021-08-12 13:14:38,305     DEBUG      decos.py                Была вызвана функция process_ans c параметрами (<__main__.Client object at 0x00000000016BCC10>, {'response': 200}), {}. Вызов из модуля __main__. Вызов из функции Client(sys.argv).connect().Вызов из функции connect
+2021-08-12 13:14:38,305     INFO       client_new.py           Сервер 192.168.3.8 ответ'200 : OK' 
+2021-08-12 13:22:01,588     DEBUG      client_new.py           Была вызвана функция create_presence c параметрами (<__main__.Client object at 0x000000000166CC10>,), {}. Вызов из модуля __main__. Вызов из функции Client(sys.argv).connect().Вызов из функции connect
+2021-08-12 13:22:01,588     DEBUG      client_new.py           Была вызвана функция process_ans c параметрами (<__main__.Client object at 0x000000000166CC10>, {'response': 200}), {}. Вызов из модуля __main__. Вызов из функции Client(sys.argv).connect().Вызов из функции connect
+2021-08-12 13:22:01,588     INFO       client_new.py           Сервер 192.168.3.8 ответ'200 : OK' 
+2021-08-12 13:24:54,600     DEBUG      client_new.py           Была вызвана функция create_presence c параметрами <__main__.Client object at 0x00000000016BCC10>, {}. Вызов из модуля __main__. Вызов из функции Client(sys.argv).connect().Вызов из функции connect
+2021-08-12 13:24:54,615     DEBUG      client_new.py           Была вызвана функция process_ans c параметрами <__main__.Client object at 0x00000000016BCC10>, {}. Вызов из модуля __main__. Вызов из функции Client(sys.argv).connect().Вызов из функции connect
+2021-08-12 13:24:54,615     INFO       client_new.py           Сервер 192.168.3.8 ответ'200 : OK' 
+2021-08-12 13:26:11,667     DEBUG      client_new.py           Была вызвана функция 'create_presence' c параметрами <__main__.Client object at 0x000000000166CC10>, {}. Вызов из модуля __main__. Вызов из функции Client(sys.argv).connect().Вызов из функции connect
+2021-08-12 13:26:11,667     DEBUG      client_new.py           Была вызвана функция 'process_ans' c параметрами <__main__.Client object at 0x000000000166CC10>, {}. Вызов из модуля __main__. Вызов из функции Client(sys.argv).connect().Вызов из функции connect
+2021-08-12 13:26:11,667     INFO       client_new.py           Сервер 192.168.3.8 ответ'200 : OK' 
+2021-08-12 13:28:43,740     DEBUG      client_new.py           Была вызвана функция 'create_presence' c параметрами (<__main__.Client object at 0x000000000167CC10>,), {}. Вызов из модуля __main__. Вызов из функции 'Client(sys.argv).connect()'.Вызов из функции connect
+2021-08-12 13:28:43,755     DEBUG      client_new.py           Была вызвана функция 'process_ans' c параметрами (<__main__.Client object at 0x000000000167CC10>, {'response': 200}), {}. Вызов из модуля __main__. Вызов из функции 'Client(sys.argv).connect()'.Вызов из функции connect
+2021-08-12 13:28:43,755     INFO       client_new.py           Сервер 192.168.3.8 ответ'200 : OK' 
+2021-08-12 14:07:02,300     DEBUG      client_new.py           Была вызвана функция 'get_port' c параметрами (<setting_hosts.SettingPortAddress object at 0x000000000166CC40>,), {}. Вызов из модуля setting_hosts. Вызов из функции 'Client(sys.argv).connect()'.Вызов из функции connect
+2021-08-12 14:07:02,305     DEBUG      client_new.py           Была вызвана функция 'create_presence' c параметрами (<__main__.Client object at 0x000000000166CC70>,), {}. Вызов из модуля __main__. Вызов из функции 'Client(sys.argv).connect()'.Вызов из функции connect
+2021-08-12 14:07:02,305     DEBUG      client_new.py           Была вызвана функция 'process_ans' c параметрами (<__main__.Client object at 0x000000000166CC70>, {'response': 200}), {}. Вызов из модуля __main__. Вызов из функции 'Client(sys.argv).connect()'.Вызов из функции connect
+2021-08-12 14:07:02,305     INFO       client_new.py           Сервер 192.168.3.8 ответ'200 : OK' 
+2021-08-12 14:14:41,823     DEBUG      client_new.py           Была вызвана функция 'get_port' c параметрами (<setting_hosts.SettingPortAddress object at 0x000000000167CC40>,), {}. Вызов из модуля setting_hosts. Вызов из функции 'Client(sys.argv).connect()'.Вызов из функции connect
+2021-08-12 14:14:41,825     DEBUG      client_new.py           Была вызвана функция 'create_presence' c параметрами (<__main__.Client object at 0x000000000167CC70>,), {}. Вызов из модуля __main__. Вызов из функции 'Client(sys.argv).connect()'.Вызов из функции connect
+2021-08-12 14:14:41,826     DEBUG      client_new.py           Была вызвана функция 'process_ans' c параметрами (<__main__.Client object at 0x000000000167CC70>, {'response': 200}), {}. Вызов из модуля __main__. Вызов из функции 'Client(sys.argv).connect()'.Вызов из функции connect
+2021-08-12 14:14:41,826     INFO       client_new.py           Сервер 192.168.3.8 ответ'200 : OK' 
+2021-08-12 20:03:40,026     DEBUG      client.py               Была вызвана функция 'get_port' c параметрами (<setting_hosts.SettingPortAddress object at 0x000000000168CB80>,), {}. Вызов из модуля setting_hosts. Вызов из функции 'Client(sys.argv).connect()'.Вызов из функции connect
+2021-08-12 20:03:40,042     INFO       client.py               Сервер 192.168.3.8 ответ'200 : OK' 
+2021-08-12 20:03:54,996     DEBUG      client_new.py           Была вызвана функция 'get_port' c параметрами (<setting_hosts.SettingPortAddress object at 0x000000000167CB80>,), {}. Вызов из модуля setting_hosts. Вызов из функции 'Client(sys.argv).connect()'.Вызов из функции connect
+2021-08-12 20:04:09,295     DEBUG      client_new.py           Была вызвана функция 'get_port' c параметрами (<setting_hosts.SettingPortAddress object at 0x000000000167CC10>,), {}. Вызов из модуля setting_hosts. Вызов из функции 'Client(sys.argv).connect()'.Вызов из функции connect
+2021-08-12 20:04:09,295     DEBUG      client_new.py           Была вызвана функция 'create_presence' c параметрами (<__main__.Client object at 0x000000000167CC40>,), {}. Вызов из модуля __main__. Вызов из функции 'Client(sys.argv).connect()'.Вызов из функции connect
+2021-08-12 20:04:09,295     DEBUG      client_new.py           Была вызвана функция 'process_ans' c параметрами (<__main__.Client object at 0x000000000167CC40>, {'response': 200}), {}. Вызов из модуля __main__. Вызов из функции 'Client(sys.argv).connect()'.Вызов из функции connect
+2021-08-12 20:04:09,295     INFO       client_new.py           Сервер 192.168.3.8 ответ'200 : OK' 
