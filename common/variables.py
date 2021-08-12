@@ -3,7 +3,8 @@
 # Порт по умолчанию для сетевого ваимодействия
 DEFAULT_PORT = 7777
 # IP адрес по умолчанию для подключения клиента
-DEFAULT_IP_ADDRESS = '127.0.0.1'
+# DEFAULT_IP_ADDRESS = '127.0.0.1'
+DEFAULT_IP_ADDRESS = '192.168.3.8'
 # Максимальная очередь подключений
 MAX_CONNECTIONS = 5
 # Максимальная длинна сообщения в байтах
@@ -21,3 +22,5 @@ ACCOUNT_NAME = 'account_name'
 PRESENCE = 'presence'
 RESPONSE = 'response'
 ERROR = 'error'
+
+LOGGING_LEVEL = 'DEBUG'

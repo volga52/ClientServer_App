@@ -1,92 +1,66 @@
-"""Программа-сервер"""
-
 import socket
 import sys
 import json
+import logging
+
 from common.variables import ACTION, ACCOUNT_NAME, RESPONSE, MAX_CONNECTIONS, \
-    PRESENCE, TIME, USER, ERROR, DEFAULT_PORT
+    PRESENCE, TIME, USER, ERROR
 from common.utils import get_message, send_message
+from setting_hosts import SettingPortAddress as SPA
+import logs.configs.cofig_server_log
+# from decos import log
 
 
-def process_client_message(message):
-    '''
-    Обработчик сообщений от клиентов, принимает словарь -
-    сообщение от клинта, проверяет корректность,
-    возвращает словарь-ответ для клиента
+class ServerConnect:
+    LOGGING = logging.getLogger('server')
 
-    :param message:
-    :return:
-    '''
-    if ACTION in message and message[ACTION] == PRESENCE and TIME in message \
-            and USER in message and message[USER][ACCOUNT_NAME] == 'Guest':
-        return {RESPONSE: 200}
-    return {
-        RESPONSE: 400,
-        ERROR: 'Bad Request'
-    }
+    def __init__(self, starts_param):
+        self.sys_arg = starts_param
+        self.is_valid = True
 
+    @staticmethod
+    def process_client_message(message):
 
-def main():
-    '''
-    Загрузка параметров командной строки, если нет параметров, то задаём значения по умоланию.
-    Сначала обрабатываем порт:
-    server.py -p 8079 -a 192.168.1.2
-    :return:
-    '''
+        if ACTION in message and message[ACTION] == PRESENCE and TIME in message \
+                and USER in message and message[USER][ACCOUNT_NAME] == 'Guest':
 
-    sys_arg = sys.argv
+            return {RESPONSE: 200}
+        LOG = logging.getLogger('server')
+        LOG.error(f"failed message {message}")              # log
+        return {
+            RESPONSE: 400,
+            ERROR: 'Bad Request'
+        }
 
-    try:
-        # if '-p' in sys_arg:
-        if '-p' in sys_arg:
-            listen_port = int(sys_arg[sys_arg.index('-p') + 1])
-        else:
-            listen_port = DEFAULT_PORT
-        if listen_port < 1024 or listen_port > 65535:
-            raise ValueError
-    except IndexError:
-        print('После параметра -\'p\' необходимо указать номер порта.')
-        sys.exit(1)
-    except ValueError:
-        print(
-            'В качастве порта может быть указано только число в диапазоне от 1024 до 65535.')
-        sys.exit(1)
+    def connect(self):
+        listen_address = SPA(self.sys_arg).get_address()
+        print(listen_address)
+        listen_port = SPA(self.sys_arg).get_port()
 
-    # Затем загружаем какой адрес слушать
+        transport = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        transport.bind((listen_address, listen_port))
 
-    try:
-        if '-a' in sys_arg:
-            listen_address = sys_arg[sys_arg.index('-a') + 1]
-        else:
-            listen_address = ''
+        # Слушаем порт
+        transport.listen(MAX_CONNECTIONS)
 
-    except IndexError:
-        print(
-            'После параметра \'a\'- необходимо указать адрес, который будет слушать сервер.')
-        sys.exit(1)
+        while True:
+            client, client_address = transport.accept()
+            try:
+                message_from_client = get_message(client)
 
-    # Готовим сокет
+                self.LOGGING.info(f"Подключен клиент {message_from_client['user']['account_name']}")    # log
 
-    transport = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    transport.bind((listen_address, listen_port))
+                print(message_from_client)
+                # {'action': 'presence', 'time': 1573760672.167031, 'user': {'account_name': 'Guest'}}
+                response = self.process_client_message(message_from_client)
 
-    # Слушаем порт
-
-    transport.listen(MAX_CONNECTIONS)
-
-    while True:
-        client, client_address = transport.accept()
-        try:
-            message_from_client = get_message(client)
-            print(message_from_client)
-            # {'action': 'presence', 'time': 1573760672.167031, 'user': {'account_name': 'Guest'}}
-            response = process_client_message(message_from_client)
-            send_message(client, response)
-            client.close()
-        except (ValueError, json.JSONDecodeError):
-            print('Принято некорретное сообщение от клиента.')
-            client.close()
+                send_message(client, response)
+                client.close()
+            except (ValueError, json.JSONDecodeError):
+                self.LOGGING.error(f'error')
+                print('Принято некорретное сообщение от клиента.')
+                client.close()
 
 
 if __name__ == '__main__':
-    main()
+    ServerConnect(sys.argv).connect()

@@ -15,6 +15,7 @@ from common.utils import get_message, send_message
 from setting_hosts import SettingPortAddress as SPA
 import logs.configs.config_client_log
 import logs.configs.config_messages_log
+from decos import log
 
 
 class Client:
@@ -23,8 +24,8 @@ class Client:
     def __init__(self, start_param):
         self.sys_param = start_param
 
-    @staticmethod
-    def create_presence(account_name='Guest'):
+    @log
+    def create_presence(self, account_name='Guest'):
         '''
         Функция генерирует запрос о присутствии клиента
         :param account_name:
@@ -43,8 +44,8 @@ class Client:
         LOG_FUN.info(f'Сформировано сообщение {out}')
         return out
 
-    @staticmethod
-    def process_ans(message):
+    @log
+    def process_ans(self, message):
         '''
         Функция разбирает ответ сервера
         :param message:
@@ -70,7 +71,7 @@ class Client:
             self.LOGGER.info(f"Сервер {server_address} ответ'{answer}' ")   # log
         except (ValueError, json.JSONDecodeError):
             error_mess = 'Не удалось декодировать сообщение сервера.'
-            self.LOGGER.error(error_mess)                                     # log
+            self.LOGGER.error(error_mess)                                   # log
             print(error_mess)
 
 
