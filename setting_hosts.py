@@ -4,7 +4,7 @@ import logging
 import logs.configs.config_host_log
 
 from common.variables import DEFAULT_PORT, DEFAULT_IP_ADDRESS
-from decos import log
+from decos import log_decor
 
 
 class SettingPortAddress:
@@ -18,7 +18,7 @@ class SettingPortAddress:
     def logger(self):
         self.LOGGER.info(f"Входящие параметры '{' '.join(self.sys_arg[1:])}'")
 
-    @log
+    @log_decor
     def get_port(self):
         try:
             self.logger()                                           # log
@@ -39,6 +39,7 @@ class SettingPortAddress:
 
         return self.port_return
 
+    @log_decor
     def get_address(self):
         try:
             if '-a' in self.sys_arg:

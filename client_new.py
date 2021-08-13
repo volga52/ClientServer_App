@@ -15,8 +15,8 @@ from common.utils import get_message, send_message
 from setting_hosts import SettingPortAddress as SPA
 import logs.configs.config_client_log
 import logs.configs.config_messages_log
-from decos import log
-
+# from decos import log_decor
+from decos import Log
 
 class Client:
     LOGGER = logging.getLogger('client')
@@ -24,7 +24,7 @@ class Client:
     def __init__(self, start_param):
         self.sys_param = start_param
 
-    @log
+    @Log()
     def create_presence(self, account_name='Guest'):
         '''
         Функция генерирует запрос о присутствии клиента
@@ -44,7 +44,7 @@ class Client:
         LOG_FUN.info(f'Сформировано сообщение {out}')
         return out
 
-    @log
+    @Log()
     def process_ans(self, message):
         '''
         Функция разбирает ответ сервера

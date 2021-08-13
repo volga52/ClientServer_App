@@ -21,3 +21,7 @@
 2021-08-12 14:14:41,824     INFO       client_new.py  Сформировано сообщение {'action': 'presence', 'time': 1628766881.824345, 'user': {'account_name': 'Guest'}}
 2021-08-12 20:03:40,042     INFO       client.py      Сформировано сообщение {'action': 'presence', 'time': 1628787820.042523, 'user': {'account_name': 'Guest'}}
 2021-08-12 20:04:09,295     INFO       client_new.py  Сформировано сообщение {'action': 'presence', 'time': 1628787849.2958555, 'user': {'account_name': 'Guest'}}
+2021-08-12 20:13:01,924     INFO       client_new.py  Сформировано сообщение {'action': 'presence', 'time': 1628788381.9242606, 'user': {'account_name': 'Guest'}}
+2021-08-12 20:15:52,990     INFO       client_new.py  Сформировано сообщение {'action': 'presence', 'time': 1628788552.9907045, 'user': {'account_name': 'Guest'}}
+2021-08-13 10:02:34,851     INFO       client_new.py  Сформировано сообщение {'action': 'presence', 'time': 1628838154.8510022, 'user': {'account_name': 'Guest'}}
+2021-08-13 10:23:13,031     INFO       client_new.py  Сформировано сообщение {'action': 'presence', 'time': 1628839393.0311766, 'user': {'account_name': 'Guest'}}
