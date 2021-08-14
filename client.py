@@ -57,8 +57,10 @@ class Client:
         raise ValueError
 
     def connect(self):
-        server_address = SPA(self.sys_param).get_address()
-        server_port = SPA(self.sys_param).get_port()
+        # server_address = SPA(self.sys_param).get_address()
+        server_address = SPA(sys.argv).get_address()
+        # server_port = SPA(self.sys_param).get_port()
+        server_port = SPA(sys.argv).get_port()
 
         transport = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         transport.connect((server_address, server_port))

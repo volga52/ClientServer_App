@@ -25,3 +25,14 @@
 2021-08-12 20:15:52,990     INFO       client_new.py  Сформировано сообщение {'action': 'presence', 'time': 1628788552.9907045, 'user': {'account_name': 'Guest'}}
 2021-08-13 10:02:34,851     INFO       client_new.py  Сформировано сообщение {'action': 'presence', 'time': 1628838154.8510022, 'user': {'account_name': 'Guest'}}
 2021-08-13 10:23:13,031     INFO       client_new.py  Сформировано сообщение {'action': 'presence', 'time': 1628839393.0311766, 'user': {'account_name': 'Guest'}}
+2021-08-13 19:09:37,763     INFO       client.py      Сформировано сообщение {'action': 'presence', 'time': 1628870977.7637045, 'user': {'account_name': 'Guest'}}
+2021-08-13 19:31:15,208     INFO       client_new.py  Сформировано сообщение {'action': 'presence', 'time': 1628872275.208669, 'user': {'account_name': 'Guest'}}
+2021-08-14 14:59:39,712     INFO       client_new.py  Сформировано сообщение {'action': 'presence', 'time': 1628942379.7125528, 'user': {'account_name': 'Guest'}}
+2021-08-14 15:26:03,069     INFO       client_new.py  Сформировано сообщение {'action': 'presence', 'time': 1628943963.0698006, 'user': {'account_name': 'Guest'}}
+2021-08-14 15:31:49,775     INFO       client_new.py  Сформировано сообщение {'action': 'presence', 'time': 1628944309.7755, 'user': {'account_name': 'Guest'}}
+-----------------------
+2021-08-14 15:34:11,243     INFO       client_new.py  Сформировано сообщение {'action': 'presence', 'time': 1628944451.2432535, 'user': {'account_name': 'Guest'}}
+2021-08-14 15:39:16,083     INFO       client_new.py  Сформировано сообщение {'action': 'presence', 'time': 1628944756.0837493, 'user': {'account_name': 'Guest'}}
+2021-08-14 15:41:50,094     INFO       client_new.py  Сформировано сообщение {'action': 'presence', 'time': 1628944910.094799, 'user': {'account_name': 'Guest'}}
+2021-08-14 15:49:47,865     INFO       client_new.py  Сформировано сообщение {'action': 'presence', 'time': 1628945387.865074, 'user': {'account_name': 'Guest'}}
+2021-08-14 16:04:27,926     INFO       client_new.py  Сформировано сообщение {'action': 'presence', 'time': 1628946267.9267051, 'user': {'account_name': 'Guest'}}

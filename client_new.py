@@ -12,11 +12,11 @@ import logging
 from common.variables import ACTION, PRESENCE, TIME, USER, ACCOUNT_NAME, \
     RESPONSE, ERROR, DEFAULT_IP_ADDRESS, DEFAULT_PORT
 from common.utils import get_message, send_message
-from setting_hosts import SettingPortAddress as SPA
+from config_network import SettingPortAddress as SPA, create_arg_parser
 import logs.configs.config_client_log
 import logs.configs.config_messages_log
-# from decos import log_decor
 from decos import Log
+
 
 class Client:
     LOGGER = logging.getLogger('client')
@@ -58,8 +58,9 @@ class Client:
         raise ValueError
 
     def connect(self):
-        server_address = SPA(self.sys_param).get_address()
-        server_port = SPA(self.sys_param).get_port()
+        param_network = SPA(create_arg_parser())
+        server_address = param_network.get_address()
+        server_port = param_network.get_port()
 
         transport = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         transport.connect((server_address, server_port))
